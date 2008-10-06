@@ -1,0 +1,7 @@
+category: Gnome Editors Devel
+requires: bzr bzr-gtk gedit python python-gobject2 python-gtk2 python-gtksourceview2
+sdesc: "Gedit Bazaar VCS plugin"
+ldesc: "This is a plugin for Gedit that adds Bazaar functionality to 
+Gedit. This plugin aims to bring to Gedit all the benefits of bzr's 
+helpfulness on the colaboration problem. It contains the basic init, 
+branch, push, pull, commit, add and update functions."

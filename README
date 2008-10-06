@@ -1,0 +1,93 @@
+gedit-bzr
+------------------------------------------
+This is a plugin for Gedit that adds Bazaar functionality to Gedit. This 
+plugin aims to bring to Gedit all the benefits of bzr's helpfulness on 
+the colaboration problem. It contains the basic init, branch, push, 
+pull, commit, add and update functions.
+
+Runtime requirements:
+  bzr-1.7.1-1
+  bzr-gtk-0.95.0-1
+  gedit-2.22.3-1
+  python-2.5.2-3
+  python-gobject2-2.14.2-1
+  python-gtk2-2.12.1-1
+  python-gtksourceview2-2.2.0-1
+
+Build requirements:
+  cygport-0.4.0-1
+  python-2.5.2-3
+
+Canonical website:
+  http://bazaar-vcs.org/GeditIntegration
+
+Canonical download:
+  http://launchpad.net/bzr-gedit/
+
+-------------------------------------------
+
+Build instructions:
+  unpack gedit-bzr-0.80-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./gedit-bzr-0.80-X.cygport all
+
+This will create:
+  /usr/src/gedit-bzr-0.80-X-src.tar.bz2
+  /usr/src/gedit-bzr-0.80-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/gedit-2/plugins/bzr.gedit-plugin
+  /usr/lib/gedit-2/plugins/bzr/__init__.py
+  /usr/lib/gedit-2/plugins/bzr/__init__.pyc
+  /usr/lib/gedit-2/plugins/bzr/__init__.pyo
+  /usr/lib/gedit-2/plugins/bzr/bzrgedit.pot
+  /usr/lib/gedit-2/plugins/bzr/commands.py
+  /usr/lib/gedit-2/plugins/bzr/commands.pyc
+  /usr/lib/gedit-2/plugins/bzr/commands.pyo
+  /usr/lib/gedit-2/plugins/bzr/dialogs.py
+  /usr/lib/gedit-2/plugins/bzr/dialogs.pyc
+  /usr/lib/gedit-2/plugins/bzr/dialogs.pyo
+  /usr/lib/gedit-2/plugins/bzr/en_US.po
+  /usr/lib/gedit-2/plugins/bzr/en_US/LC_MESSAGES/pywine.mo
+  /usr/lib/gedit-2/plugins/bzr/es_ES/LC_MESSAGES/pywine.mo
+  /usr/lib/gedit-2/plugins/bzr/img/bzr-icon-16.png
+  /usr/lib/gedit-2/plugins/bzr/img/bzr-icon-16_no.png
+  /usr/lib/gedit-2/plugins/bzr/img/bzr-icon-24.png
+  /usr/lib/gedit-2/plugins/bzr/img/bzr-icon-24_no.png
+  /usr/lib/gedit-2/plugins/bzr/img/bzr-icon-32.png
+  /usr/lib/gedit-2/plugins/bzr/img/bzr-icon-32_no.png
+  /usr/lib/gedit-2/plugins/bzr/img/bzr-icon-64.png
+  /usr/lib/gedit-2/plugins/bzr/img/bzr-icon-64_no.png
+  /usr/lib/gedit-2/plugins/bzr/img/icons/commit16.png
+  /usr/lib/gedit-2/plugins/bzr/img/icons/diff16.png
+  /usr/lib/gedit-2/plugins/bzr/img/icons/log16.png
+  /usr/lib/gedit-2/plugins/bzr/img/icons/pull16.png
+  /usr/lib/gedit-2/plugins/bzr/img/icons/push16.png
+  /usr/lib/gedit-2/plugins/bzr/img/icons/refresh16.png
+  /usr/lib/gedit-2/plugins/bzr/model.py
+  /usr/lib/gedit-2/plugins/bzr/model.pyc
+  /usr/lib/gedit-2/plugins/bzr/model.pyo
+  /usr/lib/gedit-2/plugins/bzr/uifactory.py
+  /usr/lib/gedit-2/plugins/bzr/uifactory.pyc
+  /usr/lib/gedit-2/plugins/bzr/uifactory.pyo
+  /usr/lib/gedit-2/plugins/bzr/widgets.py
+  /usr/lib/gedit-2/plugins/bzr/widgets.pyc
+  /usr/lib/gedit-2/plugins/bzr/widgets.pyo
+  /usr/share/doc/gedit-bzr-0.80/LICENSE
+  /usr/share/doc/gedit-bzr-0.80/README
+
+------------------
+
+Port Notes:
+
+----- version 0.80-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

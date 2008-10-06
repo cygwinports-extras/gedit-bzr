@@ -1,0 +1,16 @@
+ORIG_PN="bzr-gedit"
+inherit python
+
+DESCRIPTION="Gedit Bazaar VCS plugin"
+HOMEPAGE="http://bazaar-vcs.org/GeditIntegration"
+SRC_URI="http://launchpad.net/${ORIG_PN}/${PV}/${PV}/+download/${ORIG_PN}.${PV}.tgz"
+SRC_DIR="${ORIG_PN}.${PV}"
+
+src_compile() { :; }
+
+src_install() {
+	cd ${S}
+	dodir /usr/lib/gedit-2/plugins
+	${PYTHON} setup.py install -location=${D}/usr/lib/gedit-2/plugins
+	python_optimize /usr/lib/gedit-2/plugins
+}
